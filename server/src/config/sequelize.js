@@ -14,7 +14,7 @@ const sequelize = new Sequelize({
   port: parseInt(process.env.DB_PORT || '3306'),
   database: process.env.DB_NAME || 'signcraft',
   username: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+  password: process.env.DB_PASSWORD || 'M.o.s.a.h5!?SQL',
   logging: process.env.NODE_ENV === 'development' ? console.log : false,
   pool: {
     max: 20,

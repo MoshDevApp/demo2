@@ -15,7 +15,7 @@ export function authenticateToken(req, res, next) {
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'your_jwt_secret_key');
+    const decoded = jwt.verify(token, process.env.JWT_SECRET || 'cacbd0c88a06125e9c3ecf9213939660dcf2b813006f68f156fa27b6567c8fb67b2d1ba012e9d5dbe2640f7f68e128c3e61bf230092f7fe29e3ce986d4e1f069');
     req.user = {
       userId: decoded.userId,
       tenantId: decoded.tenantId,
